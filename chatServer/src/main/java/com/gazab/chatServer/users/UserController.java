@@ -83,6 +83,11 @@ public class UserController {
     
     @GetMapping(value = "/test/close")
     public String closeTest() {
-        return "This a protected endpoint";
+        return "This is a protected endpoint";
+    }
+
+    @PostMapping(value = "/test/close")
+    public String postCloseTest() {
+        return "This is a post protected endpoint";
     }
 }
